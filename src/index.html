@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwindCSS -->
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+<!-- bg-gradient-to-r from-red-600 to-red-800 -->
+
+<body class="font-[Sarabun]">
+    <nav class="fixed top-0 left-0 w-full bg-white text-black shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div id="logo" class="flex items-center gap-4 font-[Sarabun]">
+                <a href="index.html">
+                    <img class="w-[40px]" src="https://online.pubhtml5.com/dklu/accountlogo.png" alt="">
+                </a>
+                <div class="hidden md:block">
+                    <p>โรงเรียนนวมินทราชินูทิศ สตรีวิทยา ๒</p>
+                    <p>Nawamintrachinuthit Satriwittaya 2 School</p>
+                </div>
+            </div>
+            <div
+                class="bg-gradient-to-r from-red-500 to-red-700 px-5 py-2 rounded-xl text-white text-xs md:px-6 md:text-base">
+                <button>เข้าสู่ระบบ</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+        class="pt-20 relative text-white min-h-[350px] md:min-h-[600px] flex flex-col justify-center items-center text-center px-4">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-[url('/image/bg-2.jpg')] bg-cover bg-center z-0"></div>
+        <!-- Overlay สีดำโปร่งใส -->
+        <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+        <!-- Text Content -->
+        <div class="relative z-20 max-w-3xl">
+            <h1 class="text-2xl md:text-4xl mb-4">
+                ยินดีต้อนรับสู่ <span>"บ้านพอเพียง"</span>
+            </h1>
+            <p class="text-xs md:text-lg">
+                แหล่งรวมความรู้เกี่ยวกับต้นไม้ในไทย พร้อมแนะนำวิธีดูแลต้นไม้แต่ละชนิด
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Featured Trees -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-2xl font-semibold text-red-900 mb-6">ต้นไม้แนะนำ</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <a href="main.html">
+                <div class="bg-white rounded-xl shadow hover:shadow-md transition">
+                    <img src="https://img.lazcdn.com/g/p/e0b64cf2f420eb138b9ac20169a320ab.jpg_720x720q80.jpg"
+                        class="rounded-t-xl w-full h-48 object-cover" alt="ต้นโพธิ์">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-red-800">ไวโอลินด่าง</h3>
+                        <p class="text-sm text-gray-600 mt-2">เป็นชื่อที่ได้รับความนิยม เนื่องจากมีใบรูปร่างคล้ายไวโอลิน
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-700 text-white py-10 text-center">
+        <h2 class="text-xl md:text-3xl">เริ่มต้นเส้นทางคนรักต้นไม้กับเรา</h2>
+        <p class="text-xs md:text-lg mt-2 mb-4">เข้าร่วมชุมชนของเราเพื่อเรียนรู้และแบ่งปันความรู้เกี่ยวกับต้นไม้</p>
+        <a href="https://www.nmrsw2.ac.th/">
+            <button class="bg-white text-red-700 px-5 py-2 text-sm rounded-full hover:bg-green-100 transition">
+                เข้าสู่เว็บไซต์หลักของโรงเรียน
+            </button>
+        </a>
+    </section>
+</body>
+</html>

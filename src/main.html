@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwindCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+<!-- bg-gradient-to-r from-red-600 to-red-800 -->
+
+<body class="font-[Sarabun]">
+    <nav class="fixed top-0 left-0 w-full bg-white text-black shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div id="logo" class="flex items-center gap-4 font-[Sarabun]">
+                <a href="index.html">
+                    <img class="w-[40px]" src="https://online.pubhtml5.com/dklu/accountlogo.png" alt="">
+                </a>
+                <div class="hidden md:block">
+                    <p>โรงเรียนนวมินทราชินูทิศ สตรีวิทยา ๒</p>
+                    <p>Nawamintrachinuthit Satriwittaya 2 School</p>
+                </div>
+            </div>
+            <div
+                class="bg-gradient-to-r from-red-500 to-red-700 px-5 py-2 rounded-xl text-white text-xs md:px-6 md:text-base">
+                <button>เข้าสู่ระบบ</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ต้นไม้: ต้นไวโอลินด่าง -->
+    <section class="max-w-5xl mx-auto p-6 mt-10 pt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- รูปภาพ -->
+            <img src="https://img.lazcdn.com/g/p/e0b64cf2f420eb138b9ac20169a320ab.jpg_720x720q80.jpg"
+                alt="ต้นไวโอลินด่าง" class="rounded-xl shadow w-full h-[200px] object-cover">
+
+            <div class="flex gap-2">
+                <!-- ปุ่มฟังเสียง -->
+                <button onclick="document.getElementById('treeAudio').play()"
+                    class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full transition">
+                    🔊 ฟังเสียงอธิบาย
+                </button>
+                <button
+                    onclick="document.getElementById('treeAudio').pause(); document.getElementById('treeAudio').currentTime = 0;"
+                    class="bg-gray-500 hover:bg-gray-500 text-white px-5 py-2 rounded-full transition">
+                    🔇 ปิดเสียง
+                </button>
+            </div>
+
+            <!-- รายละเอียดต้นไม้ -->
+            <div>
+                <h2 class="text-2xl font-bold text-green-700 mb-4">ต้นไวโอลินด่าง</h2>
+                <p class="text-gray-700 mb-3 leading-relaxed">
+                    ต้นไวโอลินด่าง (Variegated Fiddle Leaf Fig) เป็นพันธุ์ไม้ประดับที่มีใบใหญ่รูปทรงคล้ายไวโอลิน
+                    สีเขียวแซมขาวดูโดดเด่น นิยมปลูกในบ้านหรือที่ทำงานเพราะช่วยฟอกอากาศและให้ความรู้สึกสงบ
+                </p>
+                <p class="text-gray-700 mb-4">
+                    ควรวางในที่มีแสงรำไร รดน้ำปานกลาง และหลีกเลี่ยงแดดจัดโดยตรง
+                </p>
+
+                <!-- audio player -->
+                <audio id="treeAudio" src="/audio/violin.mp3" preload="auto"></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-700 text-white py-10 text-center">
+        <h2 class="text-xl md:text-3xl">เริ่มต้นเส้นทางคนรักต้นไม้กับเรา</h2>
+        <p class="text-xs md:text-lg mt-2 mb-4">เข้าร่วมชุมชนของเราเพื่อเรียนรู้และแบ่งปันความรู้เกี่ยวกับต้นไม้</p>
+        <a href="https://www.nmrsw2.ac.th/">
+            <button class="bg-white text-red-700 px-5 py-2 text-sm rounded-full hover:bg-green-100 transition">
+                เข้าสู่เว็บไซต์หลักของโรงเรียน
+            </button>
+        </a>
+    </section>
+</body>
+
+</html>
